@@ -1,0 +1,281 @@
+Punishments:
+  Aim:
+    remove-violations-after: 600
+    checks:
+      - "AimDuplicateLook"
+      - "AimProcessor"
+    commands:
+      - "10:10 [alert]"
+      - "60:0 ban %player% Aim 1s"
+
+  AimModulo360:
+    remove-violations-after: 600
+    checks:
+      - "AimModulo360"
+    commands:
+      - "5:5 [alert]"
+      - "50:0 ban %player% &#FF0000Aim (Loại L)"
+
+  BadPackets:
+    remove-violations-after: 200
+    checks:
+      - "BadPackets"
+      - "!BadPacketsG"
+      - "!BadPacketsQ"
+    commands:
+      - "10:10 [alert]"
+      - "80:0 ban %player% &#FF0000%check_name% 4s"
+
+  Baritone:
+    remove-violations-after: 600
+    checks:
+      - "Baritone"
+    commands:
+      - "3:3 [alert]"
+      - "10:0 ban %player% &#FF0000%check_name% 4s"
+
+  Nuker:
+    remove-violations-after: 600
+    checks:
+      - "FastBreak"
+      - "MultiBreak"
+      - "NoSwingBreak"
+      - "PositionBreakA"
+      - "PositionBreakB"
+    commands:
+      - "5:5 [alert]"
+      - "60:0 ban %player% &#FF0000%check_name% 4s"
+
+  RotationBreak:
+    remove-violations-after: 100
+    checks:
+      - "RotationBreak"
+    commands:
+      - "30:40 [alert]"
+      - "130:0 ban %player% &#FF0000%check_name% 4s"
+
+  Breaking:
+    remove-violations-after: 100
+    checks:
+      - "AirLiquidBreak"
+      - "FarBreak"
+      - "InvalidBreak"
+      - "WrongBreak"
+    commands:
+      - "5:5 [alert]"
+      - "30:0 ban %player% &#FF0000%check_name% 4s"
+
+  Hitbox:
+    remove-violations-after: 100
+    checks:
+      - "Hitboxes"
+      - "Interact"
+    commands:
+      - "5:5 [alert]"
+      - "40:0 ban %player% &#FF0000%check_name% 4s"
+
+  MultiInteract:
+    remove-violations-after: 100
+    checks:
+      - "MultiInteractA"
+      - "MultiInteractB"
+    commands:
+      - "5:5 [alert]"
+      - "10:0 ban %player% &#FF0000%check_name% 4s"
+  
+  Reach:
+    remove-violations-after: 200
+    checks:
+      - "Reach"
+    commands:
+      - "5:5 [alert]"
+      - "20:0 ban %player% &#FF0000%check_name% 4s"
+
+  WallHit:
+    remove-violations-after: 100
+    checks:
+      - "WallHit"
+    commands:
+      - "5:5 [alert]"
+      - "30:0 ban %player% &#FF0000%check_name% 4s"
+
+  Crash:
+    remove-violations-after: 100
+    checks:
+      - "Crash"
+    commands:
+      - "2:2 [alert]"
+      - "10:0 crash %player%"
+      - "20:0 banip %player% &cCrashed!"
+
+  Exploit:
+    remove-violations-after: 100
+    checks:
+      - "ExploitA"
+      - "ExploitB"
+    commands:
+      - "10:2 [alert]"
+      - "20:0 ban %player% &#FF0000%check_name% 4s"
+
+  Flight:
+    remove-violations-after: 100
+    checks:
+      - "FlightA"
+    commands:
+      - "1:1 [setback]"
+      - "5:3 [alert]"
+      - "15:0 ban %player% &#FF0000%check_name% 4s"
+
+  NoFall:
+    remove-violations-after: 300
+    checks:
+      - "NoFall"
+      - "GroundSpoof"
+    commands:
+      - "1:1 [setback]"
+      - "5:5 [alert]"
+      - "30:0 ban %player% &#FF0000%check_name% 4s"
+
+  Inventory:
+    remove-violations-after: 600
+    checks:
+      - "Inventory"
+    commands:
+      - "5:5 [alert]"
+      - "20:0 ban %player% &#FF0000%check_name% 4s"
+
+  TransactionOrder:
+    remove-violations-after: 300
+    checks:
+      - "TransactionOrder"
+    commands:
+      - "5:5 [alert]"
+      - "15:0 ban %player% &#FF0000%check_name% 4s"
+
+  NoSlow:
+    remove-violations-after: 200
+    checks:
+      - "NoSlow"
+    commands:
+      - "1:1 [setback]"
+      - "5:5 [alert]"
+      - "40:0 ban %player% &#FF0000%check_name% 4s"
+
+  MultiActions:
+    remove-violations-after: 600
+    checks:
+      - "MultiActions"
+    commands:
+      - "5:5 [alert]"
+      - "20:0 ban %player% &#FF0000%check_name% 4s"
+
+  PacketOrder:
+    remove-violations-after: 450
+    checks:
+      - "PacketOrder"
+      - "!PacketOrderB"
+    commands:
+      - "5:5 [alert]"
+      - "16:0 ban %player% &#FF0000%check_name% 4s"
+
+  Phase:
+    remove-violations-after: 100
+    checks:
+      - "Phase"
+    commands:
+      - "20:10 [alert]"
+      - "80:0 ban %player% &#FF0000%check_name% 4s"
+
+  Place:
+    remove-violations-after: 100
+    checks:
+      - "AirLiquidPlace"
+      - "DuplicateRotPlace"
+      - "FabricatedPlace"
+      - "FarPlace"
+      - "InvalidPlaceA"
+      - "InvalidPlaceB"
+      - "LineOfSightPlace"
+      - "MultiPlace"
+      - "PositionPlace"
+      - "RotationPlace"
+    commands:
+      - "10:10 [alert]"
+      - "35:0 ban %player% &#FF0000%check_name% 4s"
+
+  Post:
+    remove-violations-after: 300
+    checks:
+      - "Post"
+    commands:
+      - "40:20 [alert]"
+      - "100:0 ban %player% &#FF0000%check_name% 4s"
+
+  Simulation:
+    remove-violations-after: 100
+    checks:
+      - "Simulation"
+    commands:
+      - "1:1 [setback]"
+      - "10:10 [alert]"
+      - "80:0 ban %player% &#FF0000%check_name% 4s"
+
+  Sprint:
+    remove-violations-after: 100
+    checks:
+      - "Sprint"
+    commands:
+      - "1:1 [setback]"
+      - "5:5 [alert]"
+      - "30:0 ban %player% &#FF0000%check_name% 4s"
+
+  Timer:
+    remove-violations-after: 300
+    checks:
+      - "Timer"
+      - "TickTimer"
+    commands:
+      - "1:1 [setback]"
+      - "10:10 [alert]"
+      - "50:0 ban %player% &#FF0000%check_name% 4s"
+
+  NegativeTimer:
+    remove-violations-after: 100
+    checks:
+      - "NegativeTimer"
+    commands:
+      - "100:100 [alert]"
+
+  Velocity:
+    remove-violations-after: 300
+    checks:
+      - "Knockback"
+      - "Explosion"
+    commands:
+      - "1:1 [setback]"
+      - "10:10 [alert]"
+      - "40:0 ban %player% &#FF0000%check_name% 4s"
+
+  Vehicle:
+    remove-violations-after: 300
+    checks:
+      - "Vehicle"
+    commands:
+      - "25:10 [alert]"
+      - "50:0 ban %player% &#FF0000%check_name% 4s"
+  
+  EntityPierce:
+    remove-violations-after: 100
+    checks:
+      - "EntityPierce"
+    commands:
+      - "5:5 [alert]"
+  
+  Elytra:
+    remove-violations-after: 200
+    checks:
+      - "Elytra"
+    commands:
+      - "1:1 [setback]"
+      - "5:5 [alert]"
+      - "30:0 ban %player% &#FF0000%check_name% 4s"
